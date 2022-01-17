@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:nano",
+    "sketch": "TX\\TX\\TX.ino",
+    "port": "COM7",
+    "configuration": "cpu=atmega328"
+}

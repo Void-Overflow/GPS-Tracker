@@ -1,0 +1,4 @@
+C:\Users\dehla\Desktop\Visual Studio Projects\C++\GPS-Tracker\Debug\GPS-Tracker.vcxproj.AssemblyReference.cache
+C:\Users\dehla\Desktop\Visual Studio Projects\C++\GPS-Tracker\Debug\GPSTracker.MyForm.resources
+C:\Users\dehla\Desktop\Visual Studio Projects\C++\GPS-Tracker\Debug\GPS-Tracker.vcxproj.GenerateResource.cache
+C:\Users\dehla\Desktop\Visual Studio Projects\C++\GPS-Tracker\Debug\GPS-Tracker.exe
