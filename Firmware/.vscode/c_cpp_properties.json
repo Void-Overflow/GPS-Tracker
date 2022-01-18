@@ -16,9 +16,7 @@
             "intelliSenseMode": "gcc-x64",
             "includePath": [
                 "C:\\Users\\dehla\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\cores\\arduino",
-                "C:\\Users\\dehla\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\variants\\eightanaloginputs",
-                "C:\\Users\\dehla\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\libraries\\SoftwareSerial\\src",
-                "C:\\Users\\dehla\\Desktop\\Arduino Projects\\Projects\\libraries\\TinyGPSPlus-1.0.2b\\src",
+                "C:\\Users\\dehla\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\variants\\leonardo",
                 "c:\\users\\dehla\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5\\lib\\gcc\\avr\\7.3.0\\include",
                 "c:\\users\\dehla\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5\\lib\\gcc\\avr\\7.3.0\\include-fixed",
                 "c:\\users\\dehla\\appdata\\local\\arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5\\avr\\include"
@@ -31,8 +29,12 @@
             "defines": [
                 "F_CPU=16000000L",
                 "ARDUINO=10813",
-                "ARDUINO_AVR_NANO",
+                "ARDUINO_AVR_LEONARDO",
                 "ARDUINO_ARCH_AVR",
+                "USB_VID=0x2341",
+                "USB_PID=0x8036",
+                "USB_MANUFACTURER=\"Unknown\"",
+                "USB_PRODUCT=\"Arduino Leonardo\"",
                 "__DBL_MIN_EXP__=(-125)",
                 "__HQ_FBIT__=15",
                 "__cpp_attributes=200809",

@@ -1,5 +1,3 @@
-﻿  MyForm.cpp
-  main.cpp
-  Generating Code...
+﻿  COM_Selector.cpp
   COM_Selector.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  GPS-Tracker.vcxproj -> C:\Users\dehla\Desktop\Visual Studio Projects\C++\GPS-Tracker\Debug\GPS-Tracker.exe
+  GPS-Tracker.vcxproj -> C:\Users\dehla\Desktop\Projects\Software + Firmware\GPS Tracker\Interface\GPS-Tracker\Debug\GPS-Tracker.exe

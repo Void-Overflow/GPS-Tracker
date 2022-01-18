@@ -17,3 +17,6 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class GPSTracker.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    read_input_thread(Object): PrivateScope, Public, HideBySig
+    COM_check_method(Object): PrivateScope, Public, HideBySig

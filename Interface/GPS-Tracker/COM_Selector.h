@@ -8,6 +8,7 @@ using namespace System::Threading;
 using namespace System::Windows::Forms;
 
 ref class COM_Selector{
+	static int check_counter = 0;
 public:
 	static String^ selected_port = "NONE";
 	static bool connection_status = false;

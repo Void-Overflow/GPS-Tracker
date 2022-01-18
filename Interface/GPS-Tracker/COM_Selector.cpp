@@ -16,23 +16,32 @@ void COM_Selector::checkConnection(Thread^ t, PictureBox^ box) {
         t->Sleep(400);
 
         String^ incomingString = readCOM(port);
-        Console::WriteLine("COM Check: " + incomingString);
 
-        if (String::Compare(incomingString, "world") == 1)
+        if (String::Compare(incomingString, "world") == 1) {
+            Console::WriteLine("COM Check: " + incomingString);
             isFound = true;
+        }
+        else {
+            COM_Selector::check_counter++;
+        }
      }
 
      if (isFound == true) {
          COM_Selector::selected_port = port;
          COM_Selector::connection_status = true;
 
+         COM_Selector::check_counter = 0;
+
          box->Image = Image::FromFile(Environment::CurrentDirectory + "\\Images\\green_led.png");
      }
      else {
-         COM_Selector::selected_port = "NONE";
-         COM_Selector::connection_status = false;
+         if (COM_Selector::check_counter >= 2) {
+             COM_Selector::selected_port = "NONE";
+             COM_Selector::connection_status = false;
 
-         box->Image = Image::FromFile(Environment::CurrentDirectory + "\\Images\\red_led.png");
+             box->Image = Image::FromFile(Environment::CurrentDirectory + "\\Images\\red_led.png");
+         }
+         else {}
      }
 
      t->Sleep(5000);
@@ -50,6 +59,7 @@ void COM_Selector::writeCOM(String^ data, String^ selected_port) {
 
     catch (Exception^ ex) {
         Console::WriteLine(ex);
+        COM_Selector::check_counter++;
     }
 }
 
@@ -69,6 +79,7 @@ String^ COM_Selector::readCOM(String^ selected_port) {
     }
     catch (Exception^ ex) {
         Console::WriteLine(ex);
+        COM_Selector::check_counter++;
         return " ";
     }
 
