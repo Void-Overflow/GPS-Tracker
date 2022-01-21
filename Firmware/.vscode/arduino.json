@@ -1,5 +1,5 @@
 {
     "board": "arduino:avr:leonardo",
-    "sketch": "RX\\RX\\RX.ino",
+    "sketch": "TX\\TX\\TX.ino",
     "port": "COM7"
 }

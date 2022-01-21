@@ -2,7 +2,7 @@
 #include <SoftwareSerial.h>
 #include <TinyGPS++.h>
 
-SoftwareSerial gps_serial(4, 3); //RX, TX
+SoftwareSerial gps_serial(8, 3); //RX, TX
 TinyGPSPlus gps;
 
 namespace GPS
@@ -57,6 +57,7 @@ int counter = 0;
 
 void setup()
 {
+    Serial1.begin(9600);
     Serial.begin(9600);
     gps_serial.begin(9600);
 }
@@ -89,6 +90,7 @@ void loop()
             last_latitude = latitude;
         }
 
+        Serial1.println("AT+SEND=1,28," + longitude + "," + latitude);
         Serial.println("AT+SEND=1,28," + longitude + "," + latitude);
 
         previousMillis = currentMillis;
